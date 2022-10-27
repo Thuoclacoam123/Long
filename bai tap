@@ -1,0 +1,78 @@
+//Bai 1
+#include<stdio.h>
+
+//tinh chu vi tam giac
+int tinhChuVi(int a, int b, int c){
+	return a + b + c;
+}
+int main(){
+	int a , b , c;
+	printf("Nhap lan luot 3 canh cua tam giac: ");
+    scanf("%d %d %d", &a, &b, &c);
+    int P= tinhChuVi(a,b,c);
+    printf("Chu vi hinh tam giac la: %d", P);
+}
+
+//Bai 2
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+
+//tinh dien tich tam giac
+
+int main(int a, int b, int c)
+{
+  return a+b+c;
+}
+float tinhDienTich(int a, int b, int c){
+    int P = main(a, b, c);
+    float p = P/2.0;
+     
+    float S = sqrt(p * (p-a) * (p-b) *(p-c));
+     
+    return S;
+}
+int tichDientich()
+{
+    int a, b, c;
+    printf("Nhap lan luot 3 canh cua tam giac: ");
+    scanf("%d %d %d", &a, &b, &c);
+      
+    float S = tinhDienTich(a,b,c); 
+    printf("Dien tich hinh tam giac la: %.2f", S);
+}
+
+//Bai 3
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    int so;
+    int soTemp;
+    int tong = 0;
+    cout << "Nhap so: ";
+    cin >> so;
+    soTemp = so;
+    while (soTemp != 0) {
+        tong += soTemp % 10;
+        soTemp /= 10;
+    }
+    cout << "Tong cac chu so cua so " << so << " la " << tong << endl;
+    return 0;
+}
+
+//Bai 7
+#include<stdio.h>
+int main()
+{
+  int S = 0;
+  int n = 0;
+  while(S < 10000) {
+    n++;
+    S = S + n;
+ }
+  printf("\nSo nha nhat de tong tu 1 den n� lon hon 10000 l� %d",n);
+  printf("\nTong c�c so tu 1 den %d l�: %d",n, S);
+ 
+}
